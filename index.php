@@ -26,8 +26,6 @@
 	    }); 
 
     ');
-
-
 	$categories = ApartmentObjType::model()->findAll();
 	if (!empty($categories))
     	$menuTemplate = '{menu}'.ApartmentObjType::getMenu($categories);
