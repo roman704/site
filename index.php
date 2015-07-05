@@ -1,12 +1,9 @@
-
    <?php
     $cs = Yii::app()->clientScript;
 	$baseUrl = Yii::app()->baseUrl;	
 	$baseThemeUrl = Yii::app()->theme->baseUrl;
 	
     ?>
-
-	
 	<?php 
 		//Регистрируем jquery ui для меню категорий
 		
@@ -44,14 +41,11 @@
 	//ОСНОВНОЙ LAYOUT 
 	$this->beginContent('//layouts/main'); 
 ?>
-
-
 	<?php
 		if(issetModule('advertising')) {
 			$this->renderPartial('//modules/advertising/views/advert-top', array());
 		}
 	?>
-
 <div class="main-content">
 		<div id="homeheader">
 			<div class="slider-wrapper theme-default">
